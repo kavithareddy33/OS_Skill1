@@ -1,7 +1,7 @@
 CC = gcc
 CFLAGS = -Wall -Wextra
 
-all: practical1 practical2 practical3 practical4
+all: practical1 practical2 practical3 practical4 practical5
 
 practical1: src/practical1.c
 	$(CC) $(CFLAGS) src/practical1.c -o src/practical1
@@ -15,5 +15,8 @@ practical3: src/practical3.c
 practical4: src/practical4.c
 	$(CC) $(CFLAGS) src/practical4.c -o src/practical4
 
+practical5: practical5.c
+	$(CC) $(CFLAGS) practical5.c -o practical5
+
 clean:
-	rm -f src/practical1 src/practical2 src/practical3 src/practical4 src/practical
+	rm -f src/practical1 src/practical2 src/practical3 src/practical4 practical5
