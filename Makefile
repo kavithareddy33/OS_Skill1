@@ -15,8 +15,8 @@ practical3: src/practical3.c
 practical4: src/practical4.c
 	$(CC) $(CFLAGS) src/practical4.c -o src/practical4
 
-practical5: practical5.c
-	$(CC) $(CFLAGS) practical5.c -o practical5
+practical5: src/practical5.c
+	$(CC) $(CFLAGS) src/practical5.c -o src/practical5
 
 clean:
-	rm -f src/practical1 src/practical2 src/practical3 src/practical4 practical5
+	rm -f src/practical1 src/practical2 src/practical3 src/practical4 src/practical5
